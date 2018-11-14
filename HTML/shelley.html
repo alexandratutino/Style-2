@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Style - Mary Shelley</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+header {
+    background-color: #11335A;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    font-size: 65px;
+    color: white;
+}
+span.b {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+    border: 10px #11335A;
+    background-color: white;
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body onload="main()" ; style="background-color:#D1E2F6;">
+
+
+<header>
+  <h2>Style <img src={{url_for("static", filename="dogreading85.jpg.gif" )}}>Mary Shelley </h2>
+</header>
+        <p style="font-size: 50px">
+          Your author is Mary Shelley!
+        </p>
+        <p>
+          <img src={{url_for("static", filename="shelley.jpg" )}}>
+        </p>
+        <p>
+          Mary Wollstonecraft Shelley was born on August 30, 1797 in London, England. While she is most known for her book 'Frankenstein' and for her husband's works, she has written many other books. Her books, which have been studied more since the 1970's, expressed her radical political ideas.
+        </p>
+        <p>
+          <span class= "b">
+            Your Stats Here! <br>
+            Average Word Length: {{awl}} <br>
+            Average Sentence Length: {{asl}} <br>
+            Percent of Nouns: {{nr}} <br>
+            Percent of Verbs: {{vr}} <br>
+            Percent of Adverbs: {{avr}} <br>
+            Percent of Adjectives: {{ajr}} <br>
+          </span>
+          <img src={{url_for("static", filename="dogreading1.jpg.gif" )}}>
+          <span class="b">
+              Author Stats Here! <br>
+              Average Word Length: 3.985 <br>
+              Average sentence Length: 25.403 <br>
+              Percent of Nouns: 12.861% <br>
+              Percent of Verbs: 6.516% <br>
+              Percent of Adverbs: 4.963% <br>
+              Percent of Adjectives: 6.058% <br>
+          </span>
+        </p>
+
+    <footer>
+      <p>
+      <label> Wikipedia Page Here! </label>
+        <a href="https://en.wikipedia.org/wiki/Mary_Shelley">Mary Shelley</a>
+      </p>
+  </footer>
+</body>
+</html>
